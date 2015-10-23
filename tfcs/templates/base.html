@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="keywords" content="code,snippet,python,linux,flask"/>
+    <meta name="description" content="Tanky Woo's personal code snippets, powered by Flask"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    {% block extra_styles %}{% endblock %}
+    {% block extra_scripts %}{% endblock %}
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="header">
+        {% block header %}<a href="/">{{ site.title }}</a>{% endblock %}
+      </div>
+      <div id="content">
+        {% block content %}
+        {% endblock %}
+      </div>
+      <div id="footer">
+      Copyright © 2015 <a href="https://tankywoo.com">Tanky Woo</a>.
+      </div>
+    </div>
+  </body>
+</html>

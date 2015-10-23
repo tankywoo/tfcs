@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block extra_styles %}
+  <link rel="Stylesheet" type="text/css" href="/static/css/colorful.css">
+{% endblock %}
+
+{% block title %}{{ snippet.title }} - {{ site.title }}{% endblock %}
+
+{% block header %}
+  <a href="/">{{ site.title }}</a> &#47;
+  {{ snippet.title }} &#47;
+  {{ snippet.date }}&nbsp;&#47;&nbsp;
+  {{ snippet.category }}&nbsp;&#47;&nbsp;
+  {{ snippet.tag|join(',') }}
+{% endblock %}
+
+{% block content %}
+  {% if snippet %}
+    {{ snippet.body|safe }}
+  {% endif %}
+{% endblock %}

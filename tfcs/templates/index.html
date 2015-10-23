@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}{{ site.title }}{% endblock %}
+
+{% block content %}
+  {% if snippets_l %}
+  <ul class="index-snippets">
+    {% for snippet in snippets_l %}
+    <li>
+      <span class=""><a href="/{{ snippet.id }}/">{{ snippet.title }}</a></span>
+      <span class="index-category-tag">
+        <code>{{ snippet.category }}</code>&#47;
+      {% if snippet.tag %}
+        {% for t in snippet.tag %}
+        <code>{{ t }}</code>
+        {% endfor %}
+      {% endif %}
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+{% endblock %}

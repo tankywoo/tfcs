@@ -1,0 +1,108 @@
+/* Global Configuration */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* IE6 ignores this and uses default size of 16pt */
+html>body { font-size: 16px; }
+
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+p { margin: 0 0 1em 0; }
+
+blockquote {
+  color: #aaa;
+  margin: 0;
+  padding-left: 1em;
+  border-left: 3px solid #555;
+}
+
+/* Optimization for pre and code tag */
+pre, code { 
+  font-size: 90%;
+  color: #586e75;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  overflow: auto;
+}
+
+code {
+  background-color: #eee;
+  margin: 0 2px;
+  padding: 1px 3px;
+}
+
+pre {
+  padding: 8px 12px;
+  white-space: pre;
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: -pre-wrap;     /* ancient Opera */
+  white-space: -o-pre-wrap;   /* newer Opera */
+  white-space: pre-wrap;      /* Chrome; W3C standard */
+  word-wrap: break-word;      /* IE */
+}
+
+pre code {
+  border: 0px !important;
+  padding: 0;
+  color: #000;
+}
+
+/* Custom Configuration */
+#container {
+  min-height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#header {
+  padding: 10px 0;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+}
+
+#header a, #header a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+#footer {
+  position: absolute;
+  width: 60%;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin: 10px auto;
+  font-size: 90%;
+  text-align: center;
+  bottom: 0;
+}
+
+ul.index-snippets {
+  margin: 0;
+  padding: 0;
+}
+
+ul.index-snippets li {
+  list-style-type: none;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.5em;
+}
+
+.index-category-tag {
+  float: right;
+}
