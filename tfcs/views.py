@@ -61,7 +61,7 @@ def get_snippets(with_body=False):
                 snippets_l.append(_data)
 
     # sort by datetime
-    snippets_l = sorted(snippets_l, key=lambda m: m['date'])
+    snippets_l = sorted(snippets_l, key=lambda m: m['date'], reverse=True)
 
     return snippets_l
 
