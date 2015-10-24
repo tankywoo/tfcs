@@ -2,7 +2,7 @@
 
 Collect code snippet, powered by [Flask](http://flask.pocoo.org/)
 
-Write this just for fun...
+**WARNING**: Write this just for fun, and not stable, be used with caution...
 
 ## Config ##
 
